@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    color: white;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    color: beige;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.toggle__menu {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 50px;
+    background-color: #655DBB;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle__menu i {
+    font-size: 24px;
+    font-weight: bold;
+    color: beige;
+}
+
+.nav {
+    width: 320px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #655DBB;
+    padding-inline: 12px;
+    transform: translateX(-320px);
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    transition: all ease-out .25s;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.bagian {
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+.bagian > li {
+    margin-bottom: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+.bab {
+    margin-left: 8px;
+    margin-top: 8px;
+    font-size: .9em;
+}
+
+.bab > li {
+    margin-bottom: 8px;
+    
+}
+
+.bab > li a {
+    display: block;    
+}
+
+.content {
+    width: 60%;
+    margin-inline: auto;
+    color: #655DBB;
+    overflow-x: hidden;
+}
+
+.content > ul li {
+    margin-bottom: 12px;
+}
+
+.daerah__pabean {
+    width: 60%;
+    height: 250px;
+    margin-inline: auto;
+    margin-top: 42px;
+    margin-bottom: 102px;
+    display: flex;
+    justify-content: space-around;
+    background-color: coral;
+    border: 2px solid red;
+}
+
+.kawasan__pabean {
+    background-color: rgba(0, 0, 0, .4);
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    border-radius: 12px;
+}
